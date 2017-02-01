@@ -43,7 +43,7 @@ public class AssetCopier {
 
     /**
      * Create an AssetCopier with the Context of the app that has the assets to copy
-     * @param context
+     * @param context the context of the app that has the /assets/
      */
     public AssetCopier(Context context){
         this.context = context;
@@ -52,7 +52,7 @@ public class AssetCopier {
 
     /**
      * Call this if the assets should be scanned for media upon completion of the copy
-     * @return
+     * @return the AssetCopier
      */
     public AssetCopier withFileScanning(){
         shouldScanFiles = true;
@@ -62,8 +62,8 @@ public class AssetCopier {
     /**
      * Actually copy the sourcePath to the destDir. The destDir must already exist, but
      * subdirectories will be created as necessary
-     * @param sourcePath
-     * @param destDir
+     * @param sourcePath the path within /assets/ to copy. Can be a directory or file. "" means all of assets.
+     * @param destDir The destination directory to copy the file to.
      * @return the number of files copied
      * @throws IOException is thrown if any occurs
      */

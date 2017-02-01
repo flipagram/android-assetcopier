@@ -17,7 +17,7 @@ First, add the following to root build.gradle at the end of repositories:
 
 Then, add this to the dependencies:
 
-    compile 'com.github.flipagram:android-assetcopier:0.1'
+    compile 'com.github.flipagram:android-assetcopier:0.1.1'
 
 ## Build
 
