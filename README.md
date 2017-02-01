@@ -6,6 +6,17 @@ for UI testing.
 
 ## Binaries
 
+First, add the following to root build.gradle at the end of repositories:
+
+    allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
+
+Then, add this to the dependencies:
+
     compile 'com.github.flipagram:android-assetcopier:0.1'
 
 ## Build
